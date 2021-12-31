@@ -1,5 +1,4 @@
 from pokeapi import pokeinfo
-from pokemon import Pokemon
 
 def dex(name):
     pokemon = pokeinfo(name)
