@@ -18,13 +18,16 @@ def requestInfo(name):
 def pokeinfo(name):
     data = requestInfo(name)
     if data != None:
+        id = getId(data)
         name = getName(data)
         types = getTypes(data)
         height = getHeight(data)
         abilities = getAbilities(data)
         stats = getStats(data)
-        return Pokemon(name,height,types,abilities,stats)
+        return Pokemon(id,name,height,types,abilities,stats)
 
+def getId(data):
+    return str(data['id'])
 
 def getName(data):
     return data['name']

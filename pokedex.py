@@ -3,7 +3,9 @@ from pokeapi import pokeinfo
 def dex(name):
     pokemon = pokeinfo(name)
     if pokemon != None:
-        print('\nPokemon name is: ' + pokemon.name.capitalize())
+        print('\nPokemon Entry:')
+        print('Id: ' + pokemon.id)
+        print('Name: ' + pokemon.name.capitalize())
         print('Type(s): ')
         for x in pokemon.types:
             print('  '+ x)
