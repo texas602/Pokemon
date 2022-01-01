@@ -4,6 +4,9 @@ def dex(name):
     pokemon = pokeinfo(name)
     if pokemon != None:
         print('\nPokemon name is: ' + pokemon.name.capitalize())
+        print('Type(s): ')
+        for x in pokemon.types:
+            print('  '+ x)
         print('Height: ' + str(pokemon.height))
         print('Possible abilities: ')
         for x in pokemon.abilities:

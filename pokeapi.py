@@ -19,14 +19,21 @@ def pokeinfo(name):
     data = requestInfo(name)
     if data != None:
         name = getName(data)
+        types = getTypes(data)
         height = getHeight(data)
         abilities = getAbilities(data)
         stats = getStats(data)
-        return Pokemon(name,height,abilities,stats)
+        return Pokemon(name,height,types,abilities,stats)
 
 
 def getName(data):
     return data['name']
+
+def getTypes(data):
+    types = []
+    for x in data['types']:
+        types.append(x['type']['name'])
+    return types
 
 def getHeight(data):
     return data['height']
