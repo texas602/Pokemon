@@ -244,10 +244,11 @@ class Ui_PokedexScreen(object):
         if self.searchBar.text() == '0':
             sys.exit(app)
         else:
-            pokemon = pokeinfo(self.searchBar.text())
-            if(pokemon != None):
-                self.reloadUi(pokemon)
-                self.searchBar.setText('')
+            if self.searchBar.text()!='':
+                pokemon = pokeinfo(self.searchBar.text())
+                if(pokemon != None):
+                    self.reloadUi(pokemon)
+                    self.searchBar.setText('')
 
     def reloadUi(self, pokemon):
         self.hp.setText("HP")
