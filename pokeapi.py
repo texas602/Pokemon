@@ -24,7 +24,8 @@ def pokeinfo(name):
         height = getHeight(data)
         abilities = getAbilities(data)
         stats = getStats(data)
-        return Pokemon(id,name,height,types,abilities,stats)
+        images = getImages(data)
+        return Pokemon(id,name,height,types,abilities,stats,images)
 
 def getId(data):
     return str(data['id'])
@@ -52,3 +53,8 @@ def getStats(data):
     for x in data['stats']:
         stats[x['stat']['name']] = str(x['base_stat'])
     return stats
+
+def getImages(data):
+    images = data['sprites']
+    return images
+
