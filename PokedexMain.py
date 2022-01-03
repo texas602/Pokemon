@@ -153,15 +153,15 @@ class Ui_PokedexScreen(object):
         self.pokemonName.setStyleSheet("""
         QLabel{\n
         color: rgb(0, 0, 0);\n
-        font: 18pt;\n}""")
+        font: 14pt;\n}""")
         self.pokemonName.setObjectName("pokemonName")
 
         self.possibleAbiliities = QtWidgets.QLabel(self.infoFrame)
-        self.possibleAbiliities.setGeometry(QtCore.QRect(20, 70, 125, 25))
+        self.possibleAbiliities.setGeometry(QtCore.QRect(20, 70, 140, 25))
         self.possibleAbiliities.setStyleSheet("""
         QLabel{\n
         color: rgb(0, 0, 0);\n
-        font: 16pt;\n}""")
+        font: 14pt;\n}""")
         self.possibleAbiliities.setObjectName("possibleAbiliities")
 
         self.abilities = QtWidgets.QLabel(self.infoFrame)
@@ -169,7 +169,7 @@ class Ui_PokedexScreen(object):
         self.abilities.setStyleSheet("""
         QLabel{\n
         color: rgb(0, 0, 0);\n
-        font: 12pt;\n}""")
+        font: 8pt;\n}""")
         self.abilities.setText("")
         self.abilities.setObjectName("abilities")
 
@@ -215,7 +215,7 @@ class Ui_PokedexScreen(object):
         self.pokedexLabel.setGeometry(QtCore.QRect(20, 10, 191, 45))
         self.pokedexLabel.setStyleSheet("""
         QLabel{\n
-        font: 48pt;\n
+        font: 36pt;\n
         color: rgb(255, 251, 0);\n
         border-color: rgb(4, 51, 255);\n
         color: rgb(255, 255, 138);\n}""")
