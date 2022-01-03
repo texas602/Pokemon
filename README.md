@@ -8,6 +8,9 @@ this pokedex retieves information on the requested pokemon/id and displays name,
 
 Follow these steps before use:
     pip install requests
-    pip install pillow
+    pip install pyqt5
 
-more to come later...
+
+You may run program through main.py to display info on terminal 
+or run PokemonMain to display a GUI that show the information and image
+ 
