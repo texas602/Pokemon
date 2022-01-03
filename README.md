@@ -11,6 +11,8 @@ Follow these steps before use:
     pip install pyqt5
 
 
-You may run program through main.py to display info on terminal 
-or run PokemonMain to display a GUI that show the information and image
+Run program through main.py to display info on terminal 
+Run PokemonMain to display a GUI that display information and images of pokemon requested
+
+when prompted to search pokemon, you may enter 0 to terminate either program
  
